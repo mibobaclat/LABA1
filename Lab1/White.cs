@@ -51,9 +51,13 @@ namespace Lab1
         public bool Task6(double x, double y, double r)
         {
             bool answer = false;
+            
+            double des = 1e-6;
 
-            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -6)) { answer = true; }
-
+            if (Math.Abs(x * x + y * y - r * r) <= des)
+            {
+                answer = true;
+            }
 
             return answer;
         }
