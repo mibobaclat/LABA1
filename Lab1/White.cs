@@ -52,9 +52,9 @@ namespace Lab1
         {
             bool answer = false;
             
-            double des = 1e-6;
+            
 
-            if (Math.Abs(x * x + y * y - r * r) <= des)
+            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -4))
             {
                 answer = true;
             }
